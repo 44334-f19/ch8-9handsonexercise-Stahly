@@ -1,13 +1,100 @@
 <!DOCTYPE html> 
 <html lang="en"> 
 	<head> 
-		<title>LASTNAME Chapter8-9HandsOnExercise</title> 
+		<title>Stahl Chapter8-9HandsOnExercise</title> 
 		<meta charset="utf-8"> 
 		<style>
+            table {margin: auto;
+            border: 5px solid #000;
+            border-spacing: 0px;
+            }
+            td, th{padding: .5em;}
+            caption {font-size: 1.2em};
+            #wrapper {display: flex;
+                      flex-direction: row;
+                        }
+            form{background-color: #eaeaea;
+            
+                font-family: Arial, sans-serif;
+            padding: 10px;
+            min-width: 400px;
+                }
+            fieldset{ border: 2px ridge #000;
+            padding: 10px;
+            }
+            label {float: left;
+            width: auto;
+            text-align: right;
+            padding-right: 10px;
+            clear: left;
+            margin-top: 10px;
+            }
+            input, textarea {margin-top: 10px;
+            display: block;
+            }
+            #stupers{flex: 2;}
+            #stuinfocol1{flex:2;}
+            #stuinfocol2{flex:3;}
+            #sturating{flex:2}
+            input {type="radio"}, input{type="checkbox"} {display: inline;}
 		
 		</style>
 	</head> 
 <body> 
-
-</body> 
+    
+    <h1>Star Wars Survey</h1>
+    <table>
+        <caption>Course Schedule</caption>
+        <thead>
+        <tr>
+        <tr>
+            <th id="Title of movie">Title</th>
+            <th id="Director">Director</th>
+            <th id="Lead ACtress">Lead Actor</th>
+            <th id="Rating">Rating</th>
+            <th id="Descrip">Description</th>
+            <th id="Review">Review</th>
+            </tr>
+              <th id="Title of movie">Star Wars</th>
+            <th id="Director">George Lucas</th>
+            <th id="Lead ACtress">Luke Skywalkerr</th>
+            <th id="Rating">Princess Leia</th>
+            <th id="Descrip">Luke Skywalker develops his Jedi powers</th>
+            <th id="Review">10/10</th>
+            </tr>
+        </thead>
+           </table>
+<div class="grid-container">
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item">     have you seen the original movies? <br>
+            <input type="Checkbox" name="yes" id="yes" value="yes">yes<br>
+            <input type="Checkbox" name="some" id="some" value="some">Some<br>
+            <input type="Checkbox" name="No" id="No" value="No">No<br>
+     <input id="mySubmit" type="submit" value="submit">
+         <input id="reset" type="reset" value="reset"></div>
+   
+    
+ <label for="myName">Name:</label>
+        <input type="text" name="myName" id="myName" required="required" >
+<label for="myEmail">Email:</label>
+        <input type="text" name="myEmail" id="myEmail" required="required">
+ <label for="myComments">Comments</label>
+        <textarea name="myComments" id="Mycomments" rows="3" cols="60" required="required"></textarea>
+    
+    Choose your favorite movie!
+            <input type="radio" name="Fav mOvie" id="movie" value="movie">Force Awakens<br>
+            <input type="radio" name="movie1" id="movie1" value="movie1">Last Hope<br>
+            <input type="radio" name="movie2" id="movie2" value="movie2">Empire Strikes Back<br>
+            <input type="radio" name="other" id="other" value="other">other<br> <br>
+    
+    
+         have you seen the original movies? <br>
+            <input type="Checkbox" name="yes" id="yes" value="yes">yes<br>
+            <input type="Checkbox" name="some" id="some" value="some">Some<br>
+            <input type="Checkbox" name="No" id="No" value="No">No<br>
+     <input id="mySubmit" type="submit" value="submit">
+         <input id="reset" type="reset" value="reset">
+     </div>
+=    </body>
 </html> 
